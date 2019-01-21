@@ -7,10 +7,7 @@
 <script>
   export default {
     name: 'OrderCard',
-    props: ["data"],
-    mounted(){
-      console.log(this.data)
-    }
+    props: ["data"]
   }
 </script>
 
