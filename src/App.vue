@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MovieTheatre />
+    <transition name="fade">
+      <MessageModal :message="modal_message" v-if="modal_trigger"/>
+    </transition>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import MovieTheatre from './components/MovieTheatre/MovieTheatre'
+  import MessageModal from './components/MovieTheatre/MessageModal/MessageModal'
+  import { mapState } from 'vuex';
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    name: 'app',
+    components: {
+      MovieTheatre, MessageModal
+    },
+    computed: {
+      ...mapState(["modal_trigger", "modal_message"])
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+  @import "GlobalStyles.css";
+
 </style>

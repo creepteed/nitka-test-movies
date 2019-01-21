@@ -1,0 +1,23 @@
+.mv-wrap {
+	width: 100vw;
+	height: 100vh;
+	background-color: #b3b1ce;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mv-wrap--iner {
+	width: 50%;
+	height: auto;
+	background-color: #fff;
+}
+
+.screen {
+	width: 80%;
+	margin: 15px auto;
+	height: 20px;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	background-color: #cecece;
+}

@@ -1,0 +1,21 @@
+.sit-wrap {
+	width: 2rem;
+	height: 2rem;
+	background-color: #cecece;
+	margin: 5px;
+	cursor: pointer;
+	border-radius: 4px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.7em;
+}
+
+.sit-wrap.selected{
+	background-color: green;
+}
+
+.sit-wrap.booked{
+	background-color: #ff896e;
+	pointer-events: none;
+}

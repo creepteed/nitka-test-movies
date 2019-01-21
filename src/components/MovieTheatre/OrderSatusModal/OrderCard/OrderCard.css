@@ -1,0 +1,15 @@
+.oc-wrap {
+	width: 100%;
+	border-bottom: 1px solid lightgray;
+	margin: 10px auto;
+	font-size: 0.8em;
+	color: #7f7f7f;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.oc-wrap > span {
+	font-size: 0.9em;
+	font-weight: bold;
+	color: black;
+}
